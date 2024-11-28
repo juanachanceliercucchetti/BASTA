@@ -1,0 +1,38 @@
+/* Estilo base para el body */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Fondo negro */
+    overflow: hidden;
+}
+
+/* Clase base para los estados */
+.estado {
+    display: none; /* Por defecto, no mostrar */
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Ajustar fondo al tamaño del contenedor */
+    background-position: center; /* Centrar imagen de fondo */
+}
+
+/* Opcional: animación para transiciones suaves */
+.estado-visible {
+    display: block;
+    animation: fade-in 0.5s ease-in-out; /* Efecto de transición */
+}
+
+/* Keyframes para animación */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
